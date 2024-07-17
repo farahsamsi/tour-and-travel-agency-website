@@ -2,7 +2,86 @@
 
 .mulish-font {
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: 1rem;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+/* body{
+    max-width: 1170px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+.orange {
+    color: rgb(255, 84, 0);
+}
+
+.dark-1 {
+    color: rgb(19, 19, 24);
+}
+
+.dark-2 {
+    color: rgb(66, 66, 71);
+}
+
+.nav-options a:hover {
+    color: rgb(255, 84, 0);
+}
+
+
+
+/* nav bar related styles */
+.navbar-container {
+    border: 2px solid red;
+    width: 90%;
+    margin: 3rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-options ul {
+    list-style: none;
+    display: flex;
+    gap: 2.75rem;
+}
+
+.nav-options a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 48px;
+    max-height: 56px;
+    margin-right: 1rem;
+}
+
+.nav-logo h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+
+/* responsive media query for mobile device */
+@media screen and (max-width:576px) {
+    .navbar-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-options ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+}
