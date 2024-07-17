@@ -7,9 +7,11 @@
     font-style: normal;
 }
 
-/* body{
-    max-width: 1170px;
-} */
+body {
+    max-width: 90%;
+    border: 2px solid red;
+    margin: 3rem auto;
+}
 
 * {
     margin: 0;
@@ -29,6 +31,14 @@
     color: rgb(66, 66, 71);
 }
 
+.primary-btn {
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    font-weight: 700;
+}
+
 .nav-options a:hover {
     color: rgb(255, 84, 0);
 }
@@ -37,13 +47,13 @@
 
 /* nav bar related styles */
 .navbar-container {
-    border: 2px solid red;
-    width: 90%;
-    margin: 3rem auto;
+    border: 2px solid green;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 3rem;
 }
 
 .nav-options ul {
@@ -73,15 +83,85 @@
 }
 
 
+/* banner related styles */
+.explore-your-travel {
+    padding: 6.5rem 11.5rem;
+    background-image: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-container {
+    max-width: 800px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    border: 2px solid blue;
+}
+
+.banner-content-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-content-container p {
+    line-height: 1.625rem;
+    margin: 1.5rem 3.875rem;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.input-fields input,
+select,
+button {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 10.875rem;
+    border: none;
+    cursor: pointer;
+    color: rgba(19, 19, 24, 0.5);
+}
+
+
 /* responsive media query for mobile device */
 @media screen and (max-width:576px) {
-    .navbar-container{
+    .navbar-container {
         flex-direction: column;
         gap: 10px;
     }
-    .nav-options ul{
+
+    .nav-options ul {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    .banner-content-container p {
+        margin: .5rem .5rem;
+    }
+
+    .input-fields {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-fields input,
+    select,
+    button {
+        width: 255px;
+        
+        border: 2px solid red;
     }
 }
