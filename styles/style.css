@@ -9,7 +9,6 @@
 
 body {
     max-width: 90%;
-    border: 2px solid red;
     margin: 3rem auto;
 }
 
@@ -47,8 +46,6 @@ body {
 
 /* nav bar related styles */
 .navbar-container {
-    border: 2px solid green;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,14 +90,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .banner-content-container {
     max-width: 800px;
     text-align: center;
     color: rgb(255, 255, 255);
-
-    border: 2px solid blue;
 }
 
 .banner-content-container h1 {
@@ -161,7 +157,5 @@ button {
     select,
     button {
         width: 255px;
-        
-        border: 2px solid red;
     }
 }
